@@ -13,30 +13,30 @@ import java.util.List;
 @RequestMapping("/api/plats")
 public class PlatController {
 
-    private final PlatService service;
+    private final PlatService platService;
 
-    public PlatController(PlatService service) {
-        this.service = service;
+    public PlatController(PlatService platService) {
+        this.platService = platService;
     }
 
     @GetMapping
     public List<Plat> getAllPlats() {
-        return service.getAllPlats();
+        return platService.getAllPlats();
     }
 
     @GetMapping("/type/{type}")
     public List<Plat> getPlatsByType(@PathVariable TypePlat type) {
-        return service.getPlatsByType(type);
+        return platService.getPlatsByType(type);
     }
 
     @GetMapping("/{id}")
     public Plat getPlatById(@PathVariable Long id) {
-        return service.getPlatById(id);
+        return platService.getPlatById(id);
     }
 
     @PostMapping
     public ResponseEntity<Plat> createPlat(@RequestBody Plat plat) {
-        Plat created = service.createPlat(plat);
+        Plat created = platService.createPlat(plat);
         return ResponseEntity.status(HttpStatus.CREATED).body(created);
     }
 
@@ -44,12 +44,12 @@ public class PlatController {
     public Plat updatePlat(
             @PathVariable Long id,
             @RequestBody Plat plat) {
-        return service.updatePlat(id, plat);
+        return platService.updatePlat(id, plat);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletePlat(@PathVariable Long id) {
-        service.deletePlat(id);
+        platService.deletePlat(id);
         return ResponseEntity.noContent().build();
     }
 }
