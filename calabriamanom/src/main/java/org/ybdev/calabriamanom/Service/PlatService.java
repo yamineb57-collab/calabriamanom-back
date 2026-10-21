@@ -1,10 +1,10 @@
-package Service;
+package org.ybdev.calabriamanom.Service;
 
-import Domain.Plat;
-import Entities.PlatEntity;
-import Mappers.PlatMapper;
-import Repositories.PlatRepository;
-import Utils.TypePlat;
+import org.ybdev.calabriamanom.Domain.Plat;
+import org.ybdev.calabriamanom.Entities.PlatEntity;
+import org.ybdev.calabriamanom.Mappers.PlatMapper;
+import org.ybdev.calabriamanom.Repositories.PlatRepository;
+import org.ybdev.calabriamanom.Utils.TypePlat;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

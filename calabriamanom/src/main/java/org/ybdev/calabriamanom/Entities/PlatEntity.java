@@ -1,6 +1,6 @@
-package Entities;
+package org.ybdev.calabriamanom.Entities;
 
-import Utils.TypePlat;
+import org.ybdev.calabriamanom.Utils.TypePlat;
 import jakarta.persistence.*;
 
 @Entity

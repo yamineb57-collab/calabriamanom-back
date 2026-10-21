@@ -1,7 +1,7 @@
-package Repositories;
+package org.ybdev.calabriamanom.Repositories;
 
-import Entities.PlatEntity;
-import Utils.TypePlat;
+import org.ybdev.calabriamanom.Entities.PlatEntity;
+import org.ybdev.calabriamanom.Utils.TypePlat;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

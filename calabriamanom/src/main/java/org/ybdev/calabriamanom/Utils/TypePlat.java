@@ -1,4 +1,4 @@
-package Utils;
+package org.ybdev.calabriamanom.Utils;
 
 public enum TypePlat {
     ENTREE,

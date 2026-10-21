@@ -1,7 +1,7 @@
-package Mappers;
+package org.ybdev.calabriamanom.Mappers;
 
-import Domain.Plat;
-import Entities.PlatEntity;
+import org.ybdev.calabriamanom.Domain.Plat;
+import org.ybdev.calabriamanom.Entities.PlatEntity;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,9 +1,7 @@
-package Domain;
+package org.ybdev.calabriamanom.Domain;
 
-import Utils.TypePlat;
-import org.springframework.stereotype.Component;
+import org.ybdev.calabriamanom.Utils.TypePlat;
 
-@Component
 public class Plat {
 
     private Long id;

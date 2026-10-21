@@ -1,8 +1,8 @@
-package Controller;
+package org.ybdev.calabriamanom.Controller;
 
-import Domain.Plat;
-import Service.PlatService;
-import Utils.TypePlat;
+import org.ybdev.calabriamanom.Domain.Plat;
+import org.ybdev.calabriamanom.Service.PlatService;
+import org.ybdev.calabriamanom.Utils.TypePlat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/plats")
+@CrossOrigin(origins = "http://localhost:4200")
 public class PlatController {
 
     private final PlatService platService;
