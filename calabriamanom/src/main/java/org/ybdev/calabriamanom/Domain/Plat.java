@@ -2,20 +2,27 @@ package org.ybdev.calabriamanom.Domain;
 
 import org.ybdev.calabriamanom.Utils.TypePlat;
 
+import java.math.BigDecimal;
+
 public class Plat {
 
     private Long id;
     private String name;
     private String description;
-    private String imageURL;
+    private String imageUrl;
     private TypePlat type;
+    private BigDecimal prix;
+    private BigDecimal prixFamilial;
+    private boolean disponible = true;
+    private Integer ordre;
 
-    public Plat(Long id, String name, String description, String imageURL, TypePlat type) {
-        this.id = id;
+    public Plat(String name, String description, String imageUrl, TypePlat type, BigDecimal prix, BigDecimal prixFamilial) {
         this.name = name;
         this.description = description;
-        this.imageURL = imageURL;
+        this.imageUrl = imageUrl;
         this.type = type;
+        this.prix = prix;
+        this.prixFamilial = prixFamilial;
     }
 
     public String getName() {
@@ -34,12 +41,12 @@ public class Plat {
         this.description = description;
     }
 
-    public String getImageURL() {
-        return imageURL;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public void setImageURL(String imageURL) {
-        this.imageURL = imageURL;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public TypePlat getType() {
@@ -56,5 +63,37 @@ public class Plat {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public BigDecimal getPrix() {
+        return prix;
+    }
+
+    public void setPrix(BigDecimal prix) {
+        this.prix = prix;
+    }
+
+    public BigDecimal getPrixFamilial() {
+        return prixFamilial;
+    }
+
+    public void setPrixFamilial(BigDecimal prixFamilial) {
+        this.prixFamilial = prixFamilial;
+    }
+
+    public boolean isDisponible() {
+        return disponible;
+    }
+
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
+    }
+
+    public Integer getOrdre() {
+        return ordre;
+    }
+
+    public void setOrdre(Integer ordre) {
+        this.ordre = ordre;
     }
 }

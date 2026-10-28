@@ -1,5 +1,6 @@
 package org.ybdev.calabriamanom.Controller;
 
+import jakarta.validation.Valid;
 import org.ybdev.calabriamanom.Domain.Plat;
 import org.ybdev.calabriamanom.Service.PlatService;
 import org.ybdev.calabriamanom.Utils.TypePlat;
@@ -36,7 +37,7 @@ public class PlatController {
     }
 
     @PostMapping
-    public ResponseEntity<Plat> createPlat(@RequestBody Plat plat) {
+    public ResponseEntity<Plat> createPlat(@Valid @RequestBody Plat plat) {
         Plat created = platService.createPlat(plat);
         return ResponseEntity.status(HttpStatus.CREATED).body(created);
     }
@@ -44,7 +45,7 @@ public class PlatController {
     @PutMapping("/{id}")
     public Plat updatePlat(
             @PathVariable Long id,
-            @RequestBody Plat plat) {
+            @Valid @RequestBody Plat plat) {
         return platService.updatePlat(id, plat);
     }
 

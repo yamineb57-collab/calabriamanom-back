@@ -1,9 +1,13 @@
 package org.ybdev.calabriamanom.Utils;
 
 public enum TypePlat {
-    ENTREE,
-    PLAT,
+    PIZZA,
+    PATES,
+    PANINI,
+    PAIN_BAGNAT,
+    SALADE,
+    GLACE,
     DESSERT,
-    BOISSON
-
+    BOISSON,
+    MENU_ENFANT
 }

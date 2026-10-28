@@ -12,15 +12,14 @@ public class PlatMapper {
             return null;
         }
 
-        Plat plat = new Plat(
-                entity.getId(),
+        return new Plat(
                 entity.getName(),
                 entity.getDescription(),
-                entity.getImageURL(),
-                entity.getType()
+                entity.getImageUrl(),
+                entity.getType(),
+                entity.getPrix(),
+                entity.getPrixFamilial()
         );
-
-        return plat;
     }
 
     public PlatEntity toEntity(Plat plat) {
@@ -28,14 +27,13 @@ public class PlatMapper {
             return null;
         }
 
-        PlatEntity entity = new PlatEntity(
-                plat.getId(),
+        return new PlatEntity(
                 plat.getName(),
                 plat.getDescription(),
-                plat.getImageURL(),
-                plat.getType()
+                plat.getImageUrl(),
+                plat.getType(),
+                plat.getPrix(),
+                plat.getPrixFamilial()
         );
-
-        return entity;
     }
 }
