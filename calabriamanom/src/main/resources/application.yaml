@@ -2,7 +2,7 @@ spring:
   application:
     name: calabriamanom
   datasource:
-    url: jdbc:mysql://localhost:32768/restaurant_db
+    url: jdbc:mysql://localhost:32769/restaurant_db
     username: root
     password: ""
     driver-class-name: com.mysql.cj.jdbc.Driver
