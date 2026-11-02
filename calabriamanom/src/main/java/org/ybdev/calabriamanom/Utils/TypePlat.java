@@ -9,5 +9,6 @@ public enum TypePlat {
     GLACE,
     DESSERT,
     BOISSON,
-    MENU_ENFANT
+    MENU_ENFANT,
+    SUPPLEMENTS
 }

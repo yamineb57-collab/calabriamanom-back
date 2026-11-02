@@ -148,6 +148,13 @@ INSERT INTO plats (name, description, image_url, type, prix, prix_familial, disp
 ('Bière Kronenbourg', NULL, NULL, 'BOISSON', 1.80, NULL, TRUE, 12);
 
 -- ---------------------------------------------------------------------
+-- SUPPLEMENTS
+-- ---------------------------------------------------------------------
+
+INSERT INTO plats (name, description, image_url, type, prix, prix_familial, disponible, ordre) VALUES
+('Légumes', NULL, NULL, 'SUPPLEMENTS', 0.60,1.80, TRUE, 1),
+('Viandes', NULL, NULL, 'SUPPLEMENTS', 0.80,2.40, TRUE, 2);
+-- ---------------------------------------------------------------------
 -- Verification : attendu PIZZA 53, PATES 8, PANINI 6, PAIN_BAGNAT 1,
 -- SALADE 7, GLACE 5, DESSERT 1, MENU_ENFANT 1, BOISSON 12 (total 94)
 -- ---------------------------------------------------------------------
