@@ -13,6 +13,7 @@ public class PlatMapper {
         }
 
         return new Plat(
+                entity.getId(),
                 entity.getName(),
                 entity.getDescription(),
                 entity.getImageUrl(),
