@@ -16,7 +16,8 @@ public class Plat {
     private boolean disponible = true;
     private Integer ordre;
 
-    public Plat(Long id, String name, String description, String imageUrl, TypePlat type, BigDecimal prix, BigDecimal prixFamilial) {
+    public Plat(Long id, String name, String description, String imageUrl,
+                TypePlat type, BigDecimal prix, BigDecimal prixFamilial, boolean disponible, Integer ordre) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -24,6 +25,8 @@ public class Plat {
         this.type = type;
         this.prix = prix;
         this.prixFamilial = prixFamilial;
+        this.disponible = disponible;
+        this.ordre = ordre;
     }
 
     public String getName() {

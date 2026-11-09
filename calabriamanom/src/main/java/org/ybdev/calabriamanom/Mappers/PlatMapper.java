@@ -19,7 +19,9 @@ public class PlatMapper {
                 entity.getImageUrl(),
                 entity.getType(),
                 entity.getPrix(),
-                entity.getPrixFamilial()
+                entity.getPrixFamilial(),
+                entity.isDisponible(),
+                entity.getOrdre()
         );
     }
 
